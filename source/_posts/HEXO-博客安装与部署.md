@@ -73,7 +73,7 @@ ps: hexo 配置文件中':'后面必须有一个空格
 
 3.$ hexo d #完整命令为 hexo deploy, 用于将本地文件发布到github上
 
-4.$ hexo n #完整命令为 hexo new, 用于新建一篇文章
+4.$ hexo n title #完整命令为 hexo new, 用于新建一篇文章
 
 5.$ hexo new page #用于生成一个页面
 

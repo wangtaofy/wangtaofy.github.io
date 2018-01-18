@@ -8,11 +8,7 @@ categories:
 - jQuery
 ---
 
-# jQuery 基础知识
-
-## 方法
-
-<!--more-->
+# 方法
 
 * $.error(): 当元素发生错误时，触发error事件
 
@@ -23,6 +19,8 @@ categories:
   $.extend(src): 将src合并到jquery全局对象中，即静态方法
 
 * $.fn.func = function() {}: 添加实例方法
+
+<!--more-->
 
 * $().data(name, value): 向选中的元素中添加数据，name: 添加的数据的名字 value: 数据的值
 
