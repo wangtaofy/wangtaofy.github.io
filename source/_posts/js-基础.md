@@ -54,7 +54,40 @@ APIs 是一套建立好的代码组件，可以让开发者实现除此之外很
 
 js 通常会按照从上到下的顺序执行代码。
 
+## 变量声明提升
+
+声明变量有三种方式：
+
+- var: 在函数之外声明的变量是全局变量，在函数内声明的变量是局部变量。
+
+- let: 声明带有作用域的变量。
+
+- const: 声明只读的常量。
+
+var 声明的变量会被提升到当前作用域的顶部，let、const 声明的变量不会被提升。
+
+```
+	console.log(a);  // undefined
+	console.log(b);  // Uncaught ReferenceError: b is not defined
+	console.log(c);  // Uncaught ReferenceError: c is not defined
+	var a = 1;
+	let b = 2;
+	const c = 3;
+```
+
+## 函数提升
+
+定义函数有两种方法，function 和 函数表达式，function 声明的函数会被提升，函数表达式不会。
+
 # 数据类型
+
+## undefined
+
+变量未定义时的属性。
+
+## null
+
+空对象指针。
 
 ## String
 
@@ -107,6 +140,13 @@ js 通常会按照从上到下的顺序执行代码。
 		str.replace('World', 'Hello');  // Hello Hello!
 	```
 
+- split(): 根据某个指定的字符将字符串转换成数组。
+
+```
+	var str = 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle';
+	str.split(',');    // ["Manchester", "London", "Liverpool", "Birmingham", "Leeds", "Carlisle"]
+```
+
 ## Number
 
 ### 递增和递减操作符
@@ -124,6 +164,44 @@ js 通常会按照从上到下的顺序执行代码。
 
 ## Boolean
 
+true、false
+
 ## Array
 
+- join(): 数组转换成字符串，用指定的字符分隔。
+
+```
+	var arr = ["Manchester", "London", "Liverpool", "Birmingham", "Leeds", "Carlisle"];
+	arr.join(',');    // 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle'
+```
+
+- push(): 在数组的末尾追加一项，返回新数组的长度。
+
+- pop(): 删除数组的最后一项，并返回删除的项。
+
+- unshift(): 在数组的开头添加一项，返回新数组的长度。
+
+- shift(): 删除数组的第一项，并返回删除的项。
+
 ## Object
+
+## 数据类型的相互转换
+
+### 字符串转数字
+
+- parseInt(): 返回整数
+
+- parseFloat(): 返回小数
+
+
+# 函数
+
+## 递归
+
+一个函数可以指向并调用自身。
+
+## 闭包
+
+## arguments 对象
+
+存储函数实参的类数组。
