@@ -5,6 +5,7 @@ tags:
 - javascript
 categories:
 - js
+- js基础知识系列
 ---
 # 什么是 JavaScript？
 
