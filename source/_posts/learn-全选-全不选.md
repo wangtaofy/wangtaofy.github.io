@@ -21,6 +21,8 @@ categories:
 
 - 全选/全不选
 
+- 反选
+
 ## 实现原理
 
 定义了一个存储选项列表checked的值的数组checkeds，根据checkeds的值来渲染选项列表。
