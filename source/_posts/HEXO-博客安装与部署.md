@@ -71,6 +71,8 @@ ps: hexo 配置文件中':'后面必须有一个空格
 
 2.$ hexo s #完整命令为 hexo server, 用于启动服务器，主要用于本地浏览,后面加上 --debug 为调试模式
 
+  $ hexo s -p 5000 修改默认端口
+
 3.$ hexo d #完整命令为 hexo deploy, 用于将本地文件发布到github上
 
 4.$ hexo n title #完整命令为 hexo new, 用于新建一篇文章

@@ -3,7 +3,7 @@ title: jQuery 基础知识
 date: 2017-09-25 13:16:56
 tags:
 - jQuery
-- javascript
+- js
 categories:
 - jQuery
 ---

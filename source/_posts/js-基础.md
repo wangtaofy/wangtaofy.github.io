@@ -2,10 +2,9 @@
 title: js_基础
 date: 2018-01-17 16:25:55
 tags:
-- javascript
+- js
 categories:
 - js
-- js基础知识系列
 ---
 # 什么是 JavaScript？
 
