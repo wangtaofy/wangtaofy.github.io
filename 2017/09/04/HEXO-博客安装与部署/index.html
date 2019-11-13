@@ -5,13 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>HEXO 博客安装与部署 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="HEXO 博客安装与部署首先需要安装 node、npm，建议用 nvm 来安装 node 安装完成后执行下列命令安装 hexo  $ npm install hexo-cli -g  在本地新建存放博客文件的文件夹：hexo文件夹，文件夹的路径中尽量不要有中文。 进入该文件夹，右键，Git Bash，执行以下命令，HEXO 会自动下载搭建网站所需的所有文件  $ hexo init">
+<meta name="keywords" content="博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HEXO 博客安装与部署">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2017&#x2F;09&#x2F;04&#x2F;HEXO-%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="HEXO 博客安装与部署首先需要安装 node、npm，建议用 nvm 来安装 node 安装完成后执行下列命令安装 hexo  $ npm install hexo-cli -g  在本地新建存放博客文件的文件夹：hexo文件夹，文件夹的路径中尽量不要有中文。 进入该文件夹，右键，Git Bash，执行以下命令，HEXO 会自动下载搭建网站所需的所有文件  $ hexo init">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-13T13:45:09.200Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -59,9 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-HEXO-博客安装与部署" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-HEXO-博客安装与部署" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/09/04/HEXO-%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" class="article-date">
   <time datetime="2017-09-04T11:04:47.000Z" itemprop="datePublished">2017-09-04</time>
@@ -78,8 +80,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/04/HEXO-%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/">HEXO 博客安装与部署</a>
+    <h1 class="article-title" itemprop="name">
+      HEXO 博客安装与部署
     </h1>
   
 
@@ -97,11 +99,46 @@
 <blockquote>
 <p>$ hexo init</p>
 </blockquote>
-        
-          <p class="article-more-link">
-            <a href="/2017/09/04/HEXO-%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/#more">Read More</a>
-          </p>
-        
+<a id="more"></a>
+
+<p>安装依赖包</p>
+<blockquote>
+<p>$ npm install</p>
+</blockquote>
+<p>执行以下命令</p>
+<blockquote>
+<p>hexo g<br>hexo s</p>
+</blockquote>
+<p>就可以在本地浏览生成的博客了。</p>
+<p>接下来将博客文件放到 github 上</p>
+<p>新建一个仓库，仓库名为 youname.github.io</p>
+<p>ps: youname 必须是你的 github 的用户名</p>
+<p>编辑 hexo 文件夹下的 _config.yml, 在该文件最下方添加如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/github用户名/仓库名字.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>ps: hexo 配置文件中’:’后面必须有一个空格</p>
+<p>配置好后保存，执行以下命令部署到 github</p>
+<blockquote>
+<p>$ hexo g<br>$ hexo d</p>
+</blockquote>
+<p>如果出现以下错误</p>
+<blockquote>
+<p>ERROR Deployer not found : git</p>
+</blockquote>
+<p>执行以下命令</p>
+<blockquote>
+<p>$ npm install hexo-deployer-git –save</p>
+</blockquote>
+<p>发布成功后在浏览器中访问你的仓库地址就可以看到博客了，第一次访问可能访问不了，需要等几分钟在访问</p>
+<h1 id="hexo-常用命令"><a href="#hexo-常用命令" class="headerlink" title="hexo 常用命令"></a>hexo 常用命令</h1><p>1.$ hexo g #完整命令为 hexo generote, 用于生成静态文件</p>
+<p>2.$ hexo s #完整命令为 hexo server, 用于启动服务器，主要用于本地浏览,后面加上 –debug 为调试模式</p>
+<p>  $ hexo s -p 5000 修改默认端口</p>
+<p>3.$ hexo d #完整命令为 hexo deploy, 用于将本地文件发布到github上</p>
+<p>4.$ hexo n title #完整命令为 hexo new, 用于新建一篇文章</p>
+<p>5.$ hexo new page #用于生成一个页面</p>
+<p>6.$ hexo clean #清除缓存</p>
+<p>ps: 顺序 new/修改文章 -&gt; clean -&gt; g -&gt; d</p>
+
       
     </div>
     <footer class="article-footer">
@@ -113,11 +150,9 @@
     </footer>
   </div>
   
-</article>
-
-
+    
   
-
+</article>
 
 </section>
         
