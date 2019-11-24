@@ -3,6 +3,7 @@ title: HEXO 博客安装与部署
 date: 2019-11-13 19:04:47
 tags:
 - 博客
+- hexo
 categories:
 - 搭建个人博客系列
 ---
