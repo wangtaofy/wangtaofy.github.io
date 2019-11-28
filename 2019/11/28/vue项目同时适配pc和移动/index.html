@@ -5,17 +5,17 @@
   
 
   
-  <title>为本地git配置多个用户 | Hexo</title>
+  <title>vue项目同时适配pc和移动 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="为本地git配置多个用户假如我有两个账户，github和gitlab，一个自己用，一个工作用，那就不能全局设置用户，而是要在为项目单独配置 首先，清除全局设置的用户，如果你没有全局设置过的话，可以跳过  git config –global –unset user.namegit config –global –unset user.email  然后  cd ~&#x2F;.ssh">
-<meta name="keywords" content="git">
+  <meta name="description" content="vue项目同时适配pc和移动先安装 lib-flexible 和 px2rem-exclude  npm i lib-flexible px2rem-exclude">
+<meta name="keywords" content="vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="为本地git配置多个用户">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;15&#x2F;%E4%B8%BA%E6%9C%AC%E5%9C%B0git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7&#x2F;index.html">
+<meta property="og:title" content="vue项目同时适配pc和移动">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;28&#x2F;vue%E9%A1%B9%E7%9B%AE%E5%90%8C%E6%97%B6%E9%80%82%E9%85%8Dpc%E5%92%8C%E7%A7%BB%E5%8A%A8&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="为本地git配置多个用户假如我有两个账户，github和gitlab，一个自己用，一个工作用，那就不能全局设置用户，而是要在为项目单独配置 首先，清除全局设置的用户，如果你没有全局设置过的话，可以跳过  git config –global –unset user.namegit config –global –unset user.email  然后  cd ~&#x2F;.ssh">
+<meta property="og:description" content="vue项目同时适配pc和移动先安装 lib-flexible 和 px2rem-exclude  npm i lib-flexible px2rem-exclude">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-15T01:27:44.336Z">
+<meta property="og:updated_time" content="2019-11-28T12:06:15.965Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -63,14 +63,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-为本地git配置多个用户" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-vue项目同时适配pc和移动" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/11/15/%E4%B8%BA%E6%9C%AC%E5%9C%B0git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7/" class="article-date">
-  <time datetime="2019-11-15T01:02:22.000Z" itemprop="datePublished">2019-11-15</time>
+    <a href="/2019/11/28/vue%E9%A1%B9%E7%9B%AE%E5%90%8C%E6%97%B6%E9%80%82%E9%85%8Dpc%E5%92%8C%E7%A7%BB%E5%8A%A8/" class="article-date">
+  <time datetime="2019-11-28T11:57:44.000Z" itemprop="datePublished">2019-11-28</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/git/">git</a>
+    <a class="article-category-link" href="/categories/vue/">vue</a>
   </div>
 
   </div>
@@ -81,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      为本地git配置多个用户
+      vue项目同时适配pc和移动
     </h1>
   
 
@@ -89,46 +89,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="为本地git配置多个用户"><a href="#为本地git配置多个用户" class="headerlink" title="为本地git配置多个用户"></a>为本地git配置多个用户</h1><p>假如我有两个账户，github和gitlab，一个自己用，一个工作用，那就不能全局设置用户，而是要在为项目单独配置</p>
-<p>首先，清除全局设置的用户，如果你没有全局设置过的话，可以跳过</p>
+        <h1 id="vue项目同时适配pc和移动"><a href="#vue项目同时适配pc和移动" class="headerlink" title="vue项目同时适配pc和移动"></a>vue项目同时适配pc和移动</h1><p>先安装 <code>lib-flexible</code> 和 <code>px2rem-exclude</code></p>
 <blockquote>
-<p>git config –global –unset user.name<br>git config –global –unset user.email</p>
-</blockquote>
-<p>然后</p>
-<blockquote>
-<p>cd ~/.ssh</p>
+<p>npm i lib-flexible px2rem-exclude</p>
 </blockquote>
 <a id="more"></a>
 
-<p>生成ssh key</p>
-<blockquote>
-<p>ssh-keygen -t rsa -C “your_emailA”</p>
-</blockquote>
-<p>enter后，会让你输入生成的文件名，比如 id_rsa_home_github</p>
-<p>然后enter，会让你输入密码，注意这个密码是以后push的时候需要输入的密码，可以不填，直接enter，这样push时就不需要输密码</p>
-<p>完成之后，.ssh目录会生成 id_rsa_github 和 id_rsa_github.pub两个文件，将 .pub 文件打开，复制里面的内容，去github添加一个ssk key，把复制的内容粘贴进去</p>
-<p>然后为gitlab创建ssh key，重复上面的步骤</p>
-<p>最后来配置confg，在.ssh/config，没有这个文件就新建一个</p>
-<blockquote>
-<h1 id="github"><a href="#github" class="headerlink" title="github"></a>github</h1><p>Host home_github<br>HostName github.com<br>User git<br>IdentityFile ~/.ssh/id_rsa_home_github</p>
-<h1 id="gitlab"><a href="#gitlab" class="headerlink" title="gitlab"></a>gitlab</h1><p>Host work_gitlab<br>HostName gitlab的域名<br>User git<br>IdentityFile ~/.ssh/id_rsa_gitlab</p>
-</blockquote>
-<p>添加文件到ssh</p>
-<blockquote>
-<p>ssh-agent bash<br>ssh-add id_ras_home_github<br>ssh-add id_ras_work_gitlab</p>
-</blockquote>
-<p>测试一下能不能连接成功</p>
-<blockquote>
-<p>ssh -vT git@home_github<br>ssh -vT git@work_gitlab</p>
-</blockquote>
+<h2 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h2><p>package.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&quot;postcss&quot;: &#123;</span><br><span class="line">  &quot;plugins&quot;: &#123;</span><br><span class="line">    &quot;autoprefixer&quot;: &#123;&#125;,</span><br><span class="line">    &quot;px2rem-exclude&quot;: &#123;</span><br><span class="line">      &quot;remUnit&quot;: 37.5,</span><br><span class="line">      &quot;exclude&quot;: &quot;node_modules|home&quot;  // 忽略某些目录</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>或者 postcss.config.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">plugins: &#123;</span><br><span class="line">  autoprefixer: &#123;&#125;,</span><br><span class="line">  &apos;px2rem-exclude&apos;: &#123;</span><br><span class="line">    &apos;remUnit&apos;: 75,</span><br><span class="line">    &apos;exclude&apos;: /node_modules|pc/i  // 忽略某些目录</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="PC端"><a href="#PC端" class="headerlink" title="PC端"></a>PC端</h2><p>APP.vue(暂时只想到这种办法)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">mounted () &#123;</span><br><span class="line">  if (this.$util.browserDetection() === &apos;PC&apos;) &#123;</span><br><span class="line">    let that = this</span><br><span class="line">    this.setRemFontSize()</span><br><span class="line">    window.addEventListener(&apos;resize&apos;, function () &#123;</span><br><span class="line">      setTimeout(() =&gt; &#123;</span><br><span class="line">        that.setRemFontSize()</span><br><span class="line">      &#125;, 1000)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;,</span><br><span class="line">methods: &#123;</span><br><span class="line">  setRemFontSize () &#123;</span><br><span class="line">    let remSize = window.innerWidth / 19.2</span><br><span class="line">    document.querySelector(&apos;html&apos;).style.fontSize = remSize + &apos;px&apos;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/15/%E4%B8%BA%E6%9C%AC%E5%9C%B0git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7/" data-id="ck3io9z1e0005v8v3cg4r0ttw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/28/vue%E9%A1%B9%E7%9B%AE%E5%90%8C%E6%97%B6%E9%80%82%E9%85%8Dpc%E5%92%8C%E7%A7%BB%E5%8A%A8/" data-id="ck3io9z110000v8v30fnj16in" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li></ul>
 
     </footer>
   </div>
@@ -136,19 +118,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/11/19/%E6%9C%AC%E5%9C%B0git%E6%9C%89github%E3%80%81gitlab%E7%AD%89%E5%A4%9A%E4%B8%AA%E8%B4%A6%E5%8F%B7%EF%BC%8Chexo%E6%8E%A8%E9%80%81%E5%88%B0github/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          本地git有github、gitlab等多个账号，hexo推送到github
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/13/HEXO-%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/11/19/%E6%9C%AC%E5%9C%B0git%E6%9C%89github%E3%80%81gitlab%E7%AD%89%E5%A4%9A%E4%B8%AA%E8%B4%A6%E5%8F%B7%EF%BC%8Chexo%E6%8E%A8%E9%80%81%E5%88%B0github/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">HEXO 博客安装与部署</div>
+      <div class="article-nav-title">本地git有github、gitlab等多个账号，hexo推送到github</div>
     </a>
   
 </nav>

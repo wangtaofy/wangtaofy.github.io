@@ -5,17 +5,13 @@
   
 
   
-  <title>为本地git配置多个用户 | Hexo</title>
+  <title>Category: vue | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="为本地git配置多个用户假如我有两个账户，github和gitlab，一个自己用，一个工作用，那就不能全局设置用户，而是要在为项目单独配置 首先，清除全局设置的用户，如果你没有全局设置过的话，可以跳过  git config –global –unset user.namegit config –global –unset user.email  然后  cd ~&#x2F;.ssh">
-<meta name="keywords" content="git">
-<meta property="og:type" content="article">
-<meta property="og:title" content="为本地git配置多个用户">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;15&#x2F;%E4%B8%BA%E6%9C%AC%E5%9C%B0git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7&#x2F;index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;categories&#x2F;vue&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="为本地git配置多个用户假如我有两个账户，github和gitlab，一个自己用，一个工作用，那就不能全局设置用户，而是要在为项目单独配置 首先，清除全局设置的用户，如果你没有全局设置过的话，可以跳过  git config –global –unset user.namegit config –global –unset user.email  然后  cd ~&#x2F;.ssh">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-15T01:27:44.336Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -63,98 +59,40 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-为本地git配置多个用户" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/15/%E4%B8%BA%E6%9C%AC%E5%9C%B0git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7/" class="article-date">
-  <time datetime="2019-11-15T01:02:22.000Z" itemprop="datePublished">2019-11-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/git/">git</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      为本地git配置多个用户
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/11/28/vue%E9%A1%B9%E7%9B%AE%E5%90%8C%E6%97%B6%E9%80%82%E9%85%8Dpc%E5%92%8C%E7%A7%BB%E5%8A%A8/" class="archive-article-date">
+  <time datetime="2019-11-28T11:57:44.000Z" itemprop="datePublished">Nov 28</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/11/28/vue%E9%A1%B9%E7%9B%AE%E5%90%8C%E6%97%B6%E9%80%82%E9%85%8Dpc%E5%92%8C%E7%A7%BB%E5%8A%A8/">vue项目同时适配pc和移动</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="为本地git配置多个用户"><a href="#为本地git配置多个用户" class="headerlink" title="为本地git配置多个用户"></a>为本地git配置多个用户</h1><p>假如我有两个账户，github和gitlab，一个自己用，一个工作用，那就不能全局设置用户，而是要在为项目单独配置</p>
-<p>首先，清除全局设置的用户，如果你没有全局设置过的话，可以跳过</p>
-<blockquote>
-<p>git config –global –unset user.name<br>git config –global –unset user.email</p>
-</blockquote>
-<p>然后</p>
-<blockquote>
-<p>cd ~/.ssh</p>
-</blockquote>
-<a id="more"></a>
-
-<p>生成ssh key</p>
-<blockquote>
-<p>ssh-keygen -t rsa -C “your_emailA”</p>
-</blockquote>
-<p>enter后，会让你输入生成的文件名，比如 id_rsa_home_github</p>
-<p>然后enter，会让你输入密码，注意这个密码是以后push的时候需要输入的密码，可以不填，直接enter，这样push时就不需要输密码</p>
-<p>完成之后，.ssh目录会生成 id_rsa_github 和 id_rsa_github.pub两个文件，将 .pub 文件打开，复制里面的内容，去github添加一个ssk key，把复制的内容粘贴进去</p>
-<p>然后为gitlab创建ssh key，重复上面的步骤</p>
-<p>最后来配置confg，在.ssh/config，没有这个文件就新建一个</p>
-<blockquote>
-<h1 id="github"><a href="#github" class="headerlink" title="github"></a>github</h1><p>Host home_github<br>HostName github.com<br>User git<br>IdentityFile ~/.ssh/id_rsa_home_github</p>
-<h1 id="gitlab"><a href="#gitlab" class="headerlink" title="gitlab"></a>gitlab</h1><p>Host work_gitlab<br>HostName gitlab的域名<br>User git<br>IdentityFile ~/.ssh/id_rsa_gitlab</p>
-</blockquote>
-<p>添加文件到ssh</p>
-<blockquote>
-<p>ssh-agent bash<br>ssh-add id_ras_home_github<br>ssh-add id_ras_work_gitlab</p>
-</blockquote>
-<p>测试一下能不能连接成功</p>
-<blockquote>
-<p>ssh -vT git@home_github<br>ssh -vT git@work_gitlab</p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/15/%E4%B8%BA%E6%9C%AC%E5%9C%B0git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7/" data-id="ck3io9z1e0005v8v3cg4r0ttw" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2019/11/19/%E6%9C%AC%E5%9C%B0git%E6%9C%89github%E3%80%81gitlab%E7%AD%89%E5%A4%9A%E4%B8%AA%E8%B4%A6%E5%8F%B7%EF%BC%8Chexo%E6%8E%A8%E9%80%81%E5%88%B0github/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          本地git有github、gitlab等多个账号，hexo推送到github
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2019/11/13/HEXO-%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">HEXO 博客安装与部署</div>
-    </a>
-  
-</nav>
-
-  
 </article>
+  
+  
+    </div></section>
+  
+
 
 </section>
         
