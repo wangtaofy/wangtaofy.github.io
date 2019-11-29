@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  <icon>http://yoursite.com/icon.png</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-11-29T03:14:02.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>会飞的鱼</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo个人博客系列--基础篇</title>
+    <link href="http://yoursite.com/2019/11/29/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97-%E5%9F%BA%E7%A1%80%E7%AF%87/"/>
+    <id>http://yoursite.com/2019/11/29/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97-%E5%9F%BA%E7%A1%80%E7%AF%87/</id>
+    <published>2019-11-29T03:14:02.000Z</published>
+    <updated>2019-11-29T03:14:02.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;hexo个人博客系列–基础篇&quot;&gt;&lt;a href=&quot;#hexo个人博客系列–基础篇&quot; class=&quot;headerlink&quot; title=&quot;hexo个人博客系列–基础篇&quot;&gt;&lt;/a&gt;hexo个人博客系列–基础篇&lt;/h1&gt;&lt;h2 id=&quot;next主题&quot;&gt;&lt;a href=&quot;#next主题&quot; class=&quot;headerlink&quot; title=&quot;next主题&quot;&gt;&lt;/a&gt;next主题&lt;/h2&gt;&lt;p&gt;打开&lt;a href=&quot;http://theme-next.iissnan.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;next&quot;&gt;next主题的网址&lt;/a&gt;，按照文档说明，下载安装并启用next&lt;/p&gt;
+&lt;h3 id=&quot;选择scheme&quot;&gt;&lt;a href=&quot;#选择scheme&quot; class=&quot;headerlink&quot; title=&quot;选择scheme&quot;&gt;&lt;/a&gt;选择scheme&lt;/h3&gt;&lt;p&gt;scheme是主题的外观，next有四种scheme，在主题配置文件中搜索scheme，选择一个主题，去掉前面的&lt;code&gt;#&lt;/code&gt;即可&lt;/p&gt;
+&lt;img src=&quot;/2019/11/29/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97-%E5%9F%BA%E7%A1%80%E7%AF%87/hexo1.png&quot; class=&quot;&quot; title=&quot;选择scheme&quot;&gt;
+    
+    </summary>
+    
+    
+      <category term="搭建个人博客系列" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue项目同时适配pc和移动</title>
+    <link href="http://yoursite.com/2019/11/28/vue%E9%A1%B9%E7%9B%AE%E5%90%8C%E6%97%B6%E9%80%82%E9%85%8Dpc%E5%92%8C%E7%A7%BB%E5%8A%A8/"/>
+    <id>http://yoursite.com/2019/11/28/vue%E9%A1%B9%E7%9B%AE%E5%90%8C%E6%97%B6%E9%80%82%E9%85%8Dpc%E5%92%8C%E7%A7%BB%E5%8A%A8/</id>
+    <published>2019-11-28T11:57:44.000Z</published>
+    <updated>2019-11-28T11:57:44.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;vue项目同时适配pc和移动&quot;&gt;&lt;a href=&quot;#vue项目同时适配pc和移动&quot; class=&quot;headerlink&quot; title=&quot;vue项目同时适配pc和移动&quot;&gt;&lt;/a&gt;vue项目同时适配pc和移动&lt;/h1&gt;&lt;p&gt;先安装 &lt;code&gt;lib-flexible&lt;/code&gt; 和 &lt;code&gt;px2rem-exclude&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;npm i lib-flexible px2rem-exclude&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/categories/vue/"/>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>本地git有github、gitlab等多个账号，hexo推送到github</title>
+    <link href="http://yoursite.com/2019/11/19/%E6%9C%AC%E5%9C%B0git%E6%9C%89github%E3%80%81gitlab%E7%AD%89%E5%A4%9A%E4%B8%AA%E8%B4%A6%E5%8F%B7%EF%BC%8Chexo%E6%8E%A8%E9%80%81%E5%88%B0github/"/>
+    <id>http://yoursite.com/2019/11/19/%E6%9C%AC%E5%9C%B0git%E6%9C%89github%E3%80%81gitlab%E7%AD%89%E5%A4%9A%E4%B8%AA%E8%B4%A6%E5%8F%B7%EF%BC%8Chexo%E6%8E%A8%E9%80%81%E5%88%B0github/</id>
+    <published>2019-11-19T15:43:22.000Z</published>
+    <updated>2019-11-19T15:43:22.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;本地git有github、gitlab等多个账号，hexo推送到github&quot;&gt;&lt;a href=&quot;#本地git有github、gitlab等多个账号，hexo推送到github&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="搭建个人博客系列" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为本地git配置多个用户</title>
+    <link href="http://yoursite.com/2019/11/15/%E4%B8%BA%E6%9C%AC%E5%9C%B0git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7/"/>
+    <id>http://yoursite.com/2019/11/15/%E4%B8%BA%E6%9C%AC%E5%9C%B0git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7/</id>
+    <published>2019-11-15T01:02:22.000Z</published>
+    <updated>2019-11-15T01:02:22.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;为本地git配置多个用户&quot;&gt;&lt;a href=&quot;#为本地git配置多个用户&quot; class=&quot;headerlink&quot; title=&quot;为本地git配置多个用户&quot;&gt;&lt;/a&gt;为本地git配置多个用户&lt;/h1&gt;&lt;p&gt;假如我有两个账户，github和gitlab，一个自己用，一个工作用，那就不能全局设置用户，而是要在为项目单独配置&lt;/p&gt;
+&lt;p&gt;首先，清除全局设置的用户，如果你没有全局设置过的话，可以跳过&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git config –global –unset user.name&lt;br&gt;git config –global –unset user.email&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;cd ~/.ssh&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HEXO 博客安装与部署</title>
+    <link href="http://yoursite.com/2019/11/13/HEXO-%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/"/>
+    <id>http://yoursite.com/2019/11/13/HEXO-%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/</id>
+    <published>2019-11-13T11:04:47.000Z</published>
+    <updated>2019-11-13T11:04:47.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HEXO-博客安装与部署&quot;&gt;&lt;a href=&quot;#HEXO-博客安装与部署&quot; class=&quot;headerlink&quot; title=&quot;HEXO 博客安装与部署&quot;&gt;&lt;/a&gt;HEXO 博客安装与部署&lt;/h1&gt;&lt;p&gt;首先需要安装 node、npm，建议用 nvm 来安装 node&lt;/p&gt;
+&lt;p&gt;安装完成后执行下列命令安装 hexo&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ npm install hexo-cli -g&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在本地新建存放博客文件的文件夹：hexo文件夹，文件夹的路径中尽量不要有中文。&lt;/p&gt;
+&lt;p&gt;进入该文件夹，右键，Git Bash，执行以下命令，HEXO 会自动下载搭建网站所需的所有文件&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ hexo init&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="搭建个人博客系列" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
