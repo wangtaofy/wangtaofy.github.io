@@ -152,4 +152,4 @@ theme_config:
 deploy:
   type: git
   repository: 
-    github: git@home_github:wangtaofy/wangtaofy.github.io.git
+    github: https://github.com/wangtaofy/wangtaofy.github.io.git
