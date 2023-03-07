@@ -3,7 +3,7 @@ import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://wangtaofy.github.io",
 
   author: {
     name: "会飞的鱼",
@@ -97,6 +97,10 @@ export default hopeTheme({
     comment: {
       // @ts-expect-error: You should generate and use your own comment service
       provider: "Giscus",
+      repo: 'wangtaofy/wangtaofy.github.io',
+      repoId: 'R_kgDOJGAB5w',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOJGAB584CUrz8'
     },
 
     // all features are enabled for demo, only preserve features you need here
